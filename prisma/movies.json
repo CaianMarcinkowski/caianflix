@@ -1,0 +1,66 @@
+[
+  {
+    "title": "Big Buck Bunny",
+    "description": "Big Buck Bunny tells the story of a giant rabbit with a heart bigger than himself. When one sunny day three rodents rudely harass him, something snaps... and the rabbit ain't no bunny anymore! In the typical cartoon tradition he prepares the nasty rodents a comical revenge.\n\nLicensed under the Creative Commons Attribution license\nhttp://www.bigbuckbunny.org",
+    "videoUrl": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+    "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Big_Buck_Bunny_thumbnail_vlc.png/1200px-Big_Buck_Bunny_thumbnail_vlc.png",
+    "genre": "Comedy",
+    "duration": "8:18"
+  },
+  {
+    "title": "The first Blender Open Movie from 2006",
+    "description": "Song : Raja Raja Kareja Mein Samaja\nAlbum : Raja Kareja Mein Samaja\nArtist : Radhe Shyam Rasia\nSinger : Radhe Shyam Rasia\nMusic Director : Sohan Lal, Dinesh Kumar\nLyricist : Vinay Bihari, Shailesh Sagar, Parmeshwar Premi\nMusic Label : T-Series",
+    "videoUrl": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
+    "thumbnailUrl": "https://i.ytimg.com/vi_webp/gWw23EYM9VM/maxresdefault.webp",
+    "genre": "Fantasy",
+    "duration": "12:18"
+  },
+  {
+    "title": "For Bigger Blazes",
+    "description": "Song : Raja Raja Kareja Mein Samaja\nAlbum : Raja Kareja Mein Samaja\nArtist : Radhe Shyam Rasia\nSinger : Radhe Shyam Rasia\nMusic Director : Sohan Lal, Dinesh Kumar\nLyricist : Vinay Bihari, Shailesh Sagar, Parmeshwar Premi\nMusic Label : T-Series",
+    "videoUrl": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4",
+    "thumbnailUrl": "https://i.ytimg.com/vi/Dr9C2oswZfA/maxresdefault.jpg",
+    "genre": "Adventure",
+    "duration": "8:18"
+  },
+  {
+    "title": "For Bigger Escape",
+    "description": " Introducing Chromecast. The easiest way to enjoy online video and music on your TV—for when Batman's escapes aren't quite big enough. For $35. Learn how to use Chromecast with Google Play Movies and more at google.com/chromecast.",
+    "videoUrl": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4",
+    "thumbnailUrl": "https://img.jakpost.net/c/2019/09/03/2019_09_03_78912_1567484272._large.jpg",
+    "genre": "Fantasy",
+    "duration": "8:18"
+  },
+  {
+    "title": "Sintel",
+    "description": "Sintel, code-named Project Durian during production, is a 2010 animated fantasy short film. It was the third Blender 'open movie'. It was produced by Ton Roosendaal, chairman of the Blender Foundation, written by Esther Wouda, directed by Colin Levy, at the time an artist at Pixar and art direction by David Revoy, who is known for Pepper&Carrot an open source webcomic series.[3] It was made at the Blender Institute, part of the Blender Foundation. The plot follows the character, Sintel, who is tracking down her pet Scales, a dragon. Just like the other Blender 'open movies', the film was made using Blender, a free and open source software application for animation, created and supported by the Blender Foundation.",
+    "videoUrl": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4",
+    "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Sintel_poster.jpg/800px-Sintel_poster.jpg",
+    "genre": "Comedy",
+    "duration": "8 minutes"
+  },
+  {
+    "title": "Tears of Steel",
+    "description": "The short begins with a view of a rocket lifting off. Thom (Vanja Rukavina) and Celia (Denise Rebergen) are standing on a bridge, arguing. Thom says both of them need to follow their passions; his is to be an astronaut and hers is the field of robotics. Celia, however, correctly concludes that Thom is scared of her robotic hand and breaks up with him.",
+    "videoUrl": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4",
+    "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Tos-poster.png/220px-Tos-poster.png",
+    "genre": "Science Fiction",
+    "duration": "12:14"
+  },
+  {
+    "title": "Elephants Dream",
+    "description": "An old man, Proog (voiced by Tygo Gernandt), guides the young Emo (voiced by Cas Jansen) through a giant surreal machine, in which the rooms have no clear transition to each other. After Proog saves Emo from flying plugs in a room consisting of a gigantic telephone switchboard, they run through a dark room filled with electrical cables and flee from a flock of bird-like robots. In the next room, Emo is tempted to answer a ringing phone, but Proog stops him and reveals a trap.",
+    "videoUrl": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
+    "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/ElephantsDreamPoster.jpg/220px-ElephantsDreamPoster.jpg",
+    "genre": "Science Fiction",
+    "duration": "10:54"
+  },
+  {
+    "title": "The first Blender Open Movie from 2006",
+    "description": "Song : Raja Raja Kareja Mein Samaja\nAlbum : Raja Kareja Mein Samaja\nArtist : Radhe Shyam Rasia\nSinger : Radhe Shyam Rasia\nMusic Director : Sohan Lal, Dinesh Kumar\nLyricist : Vinay Bihari, Shailesh Sagar, Parmeshwar Premi\nMusic Label : T-Series",
+    "videoUrl": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
+    "thumbnailUrl": "https://i.ytimg.com/vi_webp/gWw23EYM9VM/maxresdefault.webp",
+    "genre": "",
+    "duration": "12:18"
+  }
+]
