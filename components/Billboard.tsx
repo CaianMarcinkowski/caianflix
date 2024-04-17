@@ -1,4 +1,4 @@
-import useBillboard from "@/hooks/userBillbord";
+import useBillboard from "@/hooks/useBillbord";
 import React from "react";
 import { FaInfoCircle } from "react-icons/fa";
 

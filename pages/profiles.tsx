@@ -1,4 +1,4 @@
-import userCurrentUser from "@/hooks/userCurrentUser";
+import userCurrentUser from "@/hooks/useCurrentUser";
 import { NextPageContext } from "next";
 import { getSession } from "next-auth/react";
 import { useRouter } from "next/router";
