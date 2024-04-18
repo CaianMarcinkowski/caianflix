@@ -6,6 +6,10 @@ import { signIn } from "next-auth/react";
 import { FcGoogle } from "react-icons/fc";
 import { FaGithub } from "react-icons/fa";
 
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import AlertStart from "@/components/AlertStart";
+
 const Auth = () => {
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
@@ -45,50 +49,52 @@ const Auth = () => {
   }, [email, name, password, login]);
 
   return (
-    <div className="relative h-full w-full bg-[url('/images/background-auth.jpg')] bg-no-repeat bg-center bg-fixed bg-cover">
-      <div className="bg-black w-full h-full lg:bg-opacity-50">
-        <nav className="px-12 py-5">
-          <img src="/images/logo.png" alt="Logo" className="h-12" />
-        </nav>
-        <div className="flex justify-center">
-          <div className="bg-black bg-opacity-70 px-16 py-16 self-center mt-2 lg:w-2/5 lg:max-2-md rounded-md w-full">
-            <h2 className="text-white text-4xl mb-8 font-semibold">
-              {variant === "login" ? "Sing in" : "Register"}
-            </h2>
-            <div className="flex flex-col gap-4">
-              {variant === "register" && (
+    <>
+      <AlertStart />
+      <div className="relative h-full w-full bg-[url('/images/background-auth.jpg')] bg-no-repeat bg-center bg-fixed bg-cover">
+        <div className="bg-black w-full h-full lg:bg-opacity-50">
+          <nav className="px-12 py-5">
+            <img src="/images/logo.png" alt="Logo" className="h-12" />
+          </nav>
+          <div className="flex justify-center">
+            <div className="bg-black bg-opacity-70 px-16 py-16 self-center lg:w-2/5 lg:max-2-md rounded-md w-full">
+              <h2 className="text-white text-4xl mb-8 font-semibold">
+                {variant === "login" ? "Sing in" : "Register"}
+              </h2>
+              <div className="flex flex-col gap-4">
+                {variant === "register" && (
+                  <Input
+                    label="Username"
+                    onChange={(ev: any) => setName(ev.target.value)}
+                    id="name"
+                    value={name}
+                  />
+                )}
                 <Input
-                  label="Username"
-                  onChange={(ev: any) => setName(ev.target.value)}
-                  id="name"
-                  value={name}
+                  label="Email"
+                  onChange={(ev: any) => setEmail(ev.target.value)}
+                  id="email"
+                  type="email"
+                  value={email}
                 />
-              )}
-              <Input
-                label="Email"
-                onChange={(ev: any) => setEmail(ev.target.value)}
-                id="email"
-                type="email"
-                value={email}
-              />
-              <Input
-                label="Password"
-                onChange={(ev: any) => setPassword(ev.target.value)}
-                id="password"
-                type="password"
-                value={password}
-              />
-            </div>
-            <button
-              onClick={variant === "login" ? login : register}
-              className="bg-red-600 py-3 text-white rounded-md w-full mt-10 hover:bg-red-700 transition "
-            >
-              {variant === "login" ? "Login" : "Confirm"}
-            </button>
-            <div className="flex flex-row items-center gap-4 mt-8 justify-center">
-              <div
-                onClick={() => signIn("google", { callbackUrl: "/profiles" })}
-                className="
+                <Input
+                  label="Password"
+                  onChange={(ev: any) => setPassword(ev.target.value)}
+                  id="password"
+                  type="password"
+                  value={password}
+                />
+              </div>
+              <button
+                onClick={variant === "login" ? login : register}
+                className="bg-red-600 py-3 text-white rounded-md w-full mt-5 hover:bg-red-700 transition "
+              >
+                {variant === "login" ? "Login" : "Confirm"}
+              </button>
+              <div className="flex flex-row items-center gap-4 mt-5 justify-center">
+                <div
+                  onClick={() => signIn("google", { callbackUrl: "/profiles" })}
+                  className="
                                 w-10
                                 h-10
                                 bg-white
@@ -99,12 +105,12 @@ const Auth = () => {
                                 cursor-pointer
                                 hover:opacity-80
                                 transition"
-              >
-                <FcGoogle size={30}></FcGoogle>
-              </div>
-              <div
-                onClick={() => signIn("github", { callbackUrl: "/profiles" })}
-                className="
+                >
+                  <FcGoogle size={30}></FcGoogle>
+                </div>
+                <div
+                  onClick={() => signIn("github", { callbackUrl: "/profiles" })}
+                  className="
                                 w-10
                                 h-10
                                 bg-white
@@ -115,26 +121,27 @@ const Auth = () => {
                                 cursor-pointer
                                 hover:opacity-80
                                 transition"
-              >
-                <FaGithub size={30}></FaGithub>
+                >
+                  <FaGithub size={30}></FaGithub>
+                </div>
               </div>
-            </div>
 
-            <p className="text-neutral-500 mt-12">
-              {variant === "login"
-                ? "First time using caianflix?"
-                : "Already have account?"}
-              <span
-                onClick={toggleVariant}
-                className="text-white ml-1 hover:underline cursor-pointer"
-              >
-                {variant === "login" ? "Create a new account" : "Login"}
-              </span>
-            </p>
+              <p className="text-neutral-500 mt-5">
+                {variant === "login"
+                  ? "First time using caianflix?"
+                  : "Already have account?"}
+                <span
+                  onClick={toggleVariant}
+                  className="text-white ml-1 hover:underline cursor-pointer"
+                >
+                  {variant === "login" ? "Create a new account" : "Login"}
+                </span>
+              </p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
