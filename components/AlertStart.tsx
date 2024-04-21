@@ -31,8 +31,7 @@ function AlertStart() {
       <ul className="list-disc mb-4">
         <li>© Copyright 2006, Blender Foundation / Netherlands Media Art Institute / <a href="http://www.elephantsdream.org" className="underline">www.elephantsdream.org</a></li>
         <li>© Copyright 2008, Blender Foundation / <a href="http://www.bigbuckbunny.org" className="underline">www.bigbuckbunny.org</a></li>
-        <li>© Copyright Blender Foundation | <a href="http://durian.blender.org" className="underline">durian.blender.org</a></li>
-        <li>© Copyright Blender Foundation | <a href="http://www.sintel.org" className="underline">www.sintel.org</a></li>
+        <li>© Copyright Blender Foundation | <a href="http://durian.blender.org" className="underline"> durian.blender.org </a> | <a href="http://www.sintel.org" className="underline"> www.sintel.org </a></li>
       </ul>
       <button
         className="bg-red-500 text-white px-4 py-2 rounded cursor-pointer"
