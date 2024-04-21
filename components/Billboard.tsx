@@ -1,10 +1,16 @@
 import useBillboard from "@/hooks/useBillbord";
-import React from "react";
+import React, { useCallback } from "react";
 import { FaInfoCircle } from "react-icons/fa";
 import PlayButton from "./PlayButton";
+import useInfoModal from "@/hooks/useInfoModel";
 
 const Billboard = () => {
   const { data } = useBillboard();
+  const { openModal } = useInfoModal();
+
+  const handleOpenModal = useCallback(() => {
+    openModal(data?.id);
+  }, [openModal, data?.id]);
 
   const maxLength = 460;
   let description = data?.description || "";
@@ -53,8 +59,9 @@ const Billboard = () => {
           {description}
         </p>
         <div className=" flex flex-row items-center mt-3 md:mt-4 gap-3">
-          <PlayButton movieId={data?.id}/>
+          <PlayButton movieId={data?.id} />
           <button
+          onClick={handleOpenModal}
             className="
           bg-white
           text-white
