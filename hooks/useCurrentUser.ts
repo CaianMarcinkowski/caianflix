@@ -1,9 +1,8 @@
 import useSWR from "swr";
 
 import fetcher from '@/lib/fetcher';
-import { FcElectricalThreshold } from "react-icons/fc";
 
-const userCurrentUser = () => {
+const useCurrentUser = () => {
     const { data, error, isLoading, mutate } = useSWR('/api/current', fetcher);
 
     return {
@@ -14,4 +13,4 @@ const userCurrentUser = () => {
     }
 }
 
-export default userCurrentUser;
+export default useCurrentUser;
