@@ -60,7 +60,7 @@ export default NextAuth({
     }),
   ],
   pages: {
-    signIn: "/profiles",
+    signIn: "/auth",
   },
   debug: process.env.NODE_ENV === "development",
   adapter: PrismaAdapter(prismadb),
